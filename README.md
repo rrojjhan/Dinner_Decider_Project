@@ -5,7 +5,7 @@ The app suggests a random meal from a list of options or categories the user pro
 It’s designed for anyone who wants quick, stress‑free dinner ideas 
 
 # Flowchart
-
+<img width="4026" height="1671" alt="Dinner_Decider drawio" src="https://github.com/user-attachments/assets/5bfd31d2-7483-4c9a-a079-26a134eb50ee" />
 
 # References
 
