@@ -1,0 +1,179 @@
+{
+  "meals": [
+    {
+      "id": 1,
+      "name": "One Pot Beef Rice",
+      "section": "meat",
+      "protein": "beef",
+      "veggie": null,
+      "starch": "root veg",
+      "toppings": ["bacon bits", "fried onion", "sesame seeds"],
+      "description": "A hearty one-pot dish with tender beef and root vegetables over rice."
+    },
+    {
+      "id": 2,
+      "name": "Beef Stew",
+      "section": "meat",
+      "protein": "beef",
+      "veggie": null,
+      "starch": "grains",
+      "toppings": ["fried onion", "olive oil"],
+      "description": "Classic slow-cooked beef stew served over hearty grains."
+    },
+    {
+      "id": 3,
+      "name": "Snapper & Root Veggie Chowder",
+      "section": "meat",
+      "protein": "fish",
+      "veggie": null,
+      "starch": "root veg",
+      "toppings": ["cheddar cheese", "olive oil"],
+      "description": "Creamy chowder with fresh snapper and roasted root vegetables."
+    },
+    {
+      "id": 4,
+      "name": "Salmon & Farro Grain Bowl",
+      "section": "meat",
+      "protein": "fish",
+      "veggie": null,
+      "starch": "grains",
+      "toppings": ["sesame seeds", "olive oil"],
+      "description": "Pan-seared salmon fillet served over a warm farro grain bowl."
+    },
+    {
+      "id": 5,
+      "name": "Roasted Broc & Farro Bowl",
+      "section": "veggie",
+      "protein": null,
+      "veggie": "broc",
+      "starch": "grains",
+      "toppings": ["cheddar cheese", "sesame seeds"],
+      "description": "Oven-roasted broccoli florets served over nutty farro grains."
+    },
+    {
+      "id": 6,
+      "name": "Roasted Broc & Root Veggie",
+      "section": "veggie",
+      "protein": null,
+      "veggie": "broc",
+      "starch": "root veg",
+      "toppings": ["olive oil", "sesame seeds"],
+      "description": "A wholesome roasted broccoli and root vegetable medley."
+    },
+    {
+      "id": 7,
+      "name": "Corn Bread",
+      "section": "veggie",
+      "protein": null,
+      "veggie": "corn",
+      "starch": "grains",
+      "toppings": ["bacon bits", "cheddar cheese"],
+      "description": "Golden skillet cornbread with sweet corn baked right in."
+    },
+    {
+      "id": 8,
+      "name": "Corn & Root Veggie Chowder",
+      "section": "veggie",
+      "protein": null,
+      "veggie": "corn",
+      "starch": "root veg",
+      "toppings": ["cheddar cheese", "olive oil"],
+      "description": "Hearty corn chowder with roasted root vegetables."
+    },
+    {
+      "id": 9,
+      "name": "Beef & Broc Grain Bowl",
+      "section": "both",
+      "protein": "beef",
+      "veggie": "broc",
+      "starch": "grains",
+      "toppings": ["bacon bits", "sesame seeds"],
+      "description": "Savory beef and broccoli over farro grains."
+    },
+    {
+      "id": 10,
+      "name": "Savory Beef & Root Veggie Stir Fry",
+      "section": "both",
+      "protein": "beef",
+      "veggie": "broc",
+      "starch": "root veg",
+      "toppings": ["fried onion", "sesame seeds"],
+      "description": "Sizzling stir fry with beef and broccoli over roasted root vegetables."
+    },
+    {
+      "id": 11,
+      "name": "Street Corn Chicken Rice Bowl",
+      "section": "both",
+      "protein": "chick",
+      "veggie": "corn",
+      "starch": "grains",
+      "toppings": ["cheddar cheese", "olive oil"],
+      "description": "Grilled chicken and charred street corn served over seasoned rice."
+    },
+    {
+      "id": 12,
+      "name": "Sheet Pan Roasted Chicken",
+      "section": "both",
+      "protein": "chick",
+      "veggie": "corn",
+      "starch": "root veg",
+      "toppings": ["olive oil", "sesame seeds"],
+      "description": "Easy sheet pan chicken with roasted corn and root vegetables."
+    },
+    {
+      "id": 13,
+      "name": "Cereal",
+      "section": "dairy",
+      "protein": null,
+      "veggie": null,
+      "starch": "grains",
+      "dairy_type": "breakfast",
+      "dairy_sub": "milk",
+      "toppings": ["bacon bits", "fried onion"],
+      "description": "A classic breakfast cereal with cold milk — breakfast for dinner!"
+    },
+    {
+      "id": 14,
+      "name": "Grilled Cheese",
+      "section": "dairy",
+      "protein": null,
+      "veggie": null,
+      "starch": "grains",
+      "dairy_type": "breakfast",
+      "dairy_sub": "cheese",
+      "toppings": ["bacon bits", "fried onion"],
+      "description": "Golden toasted grilled cheese sandwich with gooey melted cheese."
+    },
+    {
+      "id": 15,
+      "name": "Lasagne",
+      "section": "dairy",
+      "protein": null,
+      "veggie": null,
+      "starch": "grains",
+      "dairy_type": "dinner",
+      "dairy_sub": "milk",
+      "toppings": ["cheddar cheese", "olive oil"],
+      "description": "Layered pasta with rich meat sauce, béchamel, and melted cheese."
+    },
+    {
+      "id": 16,
+      "name": "Baked Pasta",
+      "section": "dairy",
+      "protein": null,
+      "veggie": null,
+      "starch": "grains",
+      "dairy_type": "dinner",
+      "dairy_sub": "cheese",
+      "toppings": ["cheddar cheese", "bacon bits"],
+      "description": "Oven-baked pasta loaded with creamy cheese sauce and golden crust."
+    }
+  ],
+  "toppings": [
+    "bacon bits",
+    "fried onion",
+    "cheddar cheese",
+    "olive oil",
+    "sesame seeds"
+  ]
+}
