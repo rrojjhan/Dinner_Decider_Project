@@ -230,7 +230,7 @@ meal_data = {
 }
 
 
-#Write JSON file
+#Write JSON file for creating a JSON file in Python
 with open('meals.json', 'w') as json_file:
     json.dump(meal_data, json_file, indent = 4  )
 
