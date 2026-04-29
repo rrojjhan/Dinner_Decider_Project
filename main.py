@@ -235,3 +235,41 @@ with open('meals.json', 'w') as json_file:
     json.dump(meal_data, json_file, indent = 4  )
 
 print(f"The meal data has been successfully save to meals.json!")
+
+
+# Make functions to handle the user's choices
+
+"""FUNCTION ask_section():
+    Display 'Choose a food section:'
+    Display '1) Meat   2) Veggie   3) Both   4) Dairy'
+ 
+    WHILE True:
+        choice  ←  get input from user
+        IF choice is '1': RETURN 'meat'
+        IF choice is '2': RETURN 'veggie'
+        IF choice is '3': RETURN 'both'
+        IF choice is '4': RETURN 'dairy'
+        ELSE: display 'Invalid — please enter 1, 2, 3, or 4'
+"""
+
+
+def ask_section():
+    print('Choose a food section:')
+    print('1) Meat   2) Veggie   3) Both   4) Dairy')
+    while True:
+        # Ask for the user's choices
+        choice = input("Enter choice (1 -4): ").strip()
+        # Return each choice the user picks.
+        if choice == '1':
+            return 'meat'
+        elif choice == '2':
+            return 'veggie'
+        elif choice == '3':
+            return 'both'
+        elif choice == '4':
+            return 'dairy'
+        else:
+            print('Invalid — please enter 1, 2, 3, or 4')
+        
+    
+
