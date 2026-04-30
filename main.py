@@ -251,7 +251,7 @@ print(f"The meal data has been successfully save to meals.json!")
         IF choice is '4': RETURN 'dairy'
         ELSE: display 'Invalid — please enter 1, 2, 3, or 4'
 """
-
+choice_order = ()
 
 def ask_section():
     print('Choose a food section:')
@@ -259,8 +259,13 @@ def ask_section():
     while True:
         # Ask for the user's choices
         choice = input("Enter choice (1 -4): ").strip()
+        
+        
+        
+        
         # Return each choice the user picks.
         if choice == '1':
+            
             return 'meat'
         elif choice == '2':
             return 'veggie'
@@ -271,11 +276,7 @@ def ask_section():
         else:
             print('Invalid — please enter 1, 2, 3, or 4')
 
-#Call the function
-#ask_section()
-
-# For Benson, please continue your code here.
-
-        
+ask_section()
+    
     
 
