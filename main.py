@@ -270,6 +270,8 @@ def ask_section():
             return 'dairy'
         else:
             print('Invalid — please enter 1, 2, 3, or 4')
+
+# For Benson, please continue your code here.
         
     
 
