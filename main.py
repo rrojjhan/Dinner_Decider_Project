@@ -271,7 +271,11 @@ def ask_section():
         else:
             print('Invalid — please enter 1, 2, 3, or 4')
 
+#Call the function
+#ask_section()
+
 # For Benson, please continue your code here.
+
         
     
 
