@@ -259,10 +259,7 @@ def ask_section():
     while True:
         # Ask for the user's choices
         choice = input("Enter choice (1 -4): ").strip()
-        
-        
-        
-        
+  
         # Return each choice the user picks.
         if choice == '1':
             
@@ -276,7 +273,42 @@ def ask_section():
         else:
             print('Invalid — please enter 1, 2, 3, or 4')
 
-ask_section()
+def ask_protein():
+    print("Choose a protein:")
+    print("1) Beef  2) Fish ")
+    while True:
+        choice = input("Enter choice (1-2): ").strip()
+        if choice == '1': return 'beef'
+        if choice == '2': return 'fish'
+        #if choice ==  None : return None
+        print("Invalid — please enter 1 or 2")
+
+def ask_veggie():
+    print("Choose a vegetable:")
+    print("1) Broc   2) Corn")
+    while True:
+        choice = input("Enter choice (1-2): ").strip()
+        if choice == '1': return 'broc'
+        if choice == '2': return 'corn'
+        print("Invalid — please enter 1 or 2")
+
+def ask_starch():
+    print("Choose a starch:")
+    print("1) Grains   2) Root Veg")
+    while True:
+        choice = input("Enter choice (1-2): ").strip()
+        if choice == '1': return 'grains'
+        if choice == '2': return 'root veg'
+        print("Invalid — please enter 1 or 2")
+
+def ask_toppings():
+    print("Would you like extra toppings?")
+    print("1) Yes   2) No")
+    while True:
+        choice = input("Enter choice (1-2): ").strip()
+        if choice == '1': return True
+        if choice == '2': return False
+        print("Invalid — please enter 1 or 2")
     
     
 
