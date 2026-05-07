@@ -309,6 +309,36 @@ def ask_toppings():
         if choice == '1': return True
         if choice == '2': return False
         print("Invalid — please enter 1 or 2")
-    
+
+#Next, you will need to create the functions that fill out which meal matches your answer
+
+"""FUNCTION filter_meals(all_meals, section, protein, veggie, starch):
+    results  ←  empty list
+ 
+    FOR each meal in all_meals:
+ 
+        # Filter 1: food section must match
+        IF meal['section'] does NOT equal section:
+            SKIP this meal (continue)
+ 
+        # Filter 2: protein must match (only for meat/both sections)
+        IF section is 'meat' or 'both':
+            IF meal['protein'] does NOT equal protein:
+                SKIP this meal
+ 
+        # Filter 3: veggie must match (only for veggie/both sections)
+        IF section is 'veggie' or 'both':
+            IF meal['veggie'] does NOT equal veggie:
+                SKIP this meal
+ 
+        # Filter 4: starch must match
+        IF meal['starch'] does NOT equal starch:
+            SKIP this meal
+ 
+        # Meal passed all filters — add it!
+        ADD meal to results
+ 
+    RETURN results
+"""
     
 
