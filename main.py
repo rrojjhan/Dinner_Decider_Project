@@ -262,11 +262,13 @@ def ask_section():
   
         # Return each choice the user picks.
         if choice == '1':
-            
+            ask_protein()
             return 'meat'
         elif choice == '2':
+            ask_veggie()
             return 'veggie'
         elif choice == '3':
+            ask_both()
             return 'both'
         elif choice == '4':
             return 'dairy'
@@ -310,35 +312,15 @@ def ask_toppings():
         if choice == '2': return False
         print("Invalid — please enter 1 or 2")
 
-#Next, you will need to create the functions that fill out which meal matches your answer
 
-"""FUNCTION filter_meals(all_meals, section, protein, veggie, starch):
-    results  ←  empty list
- 
-    FOR each meal in all_meals:
- 
-        # Filter 1: food section must match
-        IF meal['section'] does NOT equal section:
-            SKIP this meal (continue)
- 
-        # Filter 2: protein must match (only for meat/both sections)
-        IF section is 'meat' or 'both':
-            IF meal['protein'] does NOT equal protein:
-                SKIP this meal
- 
-        # Filter 3: veggie must match (only for veggie/both sections)
-        IF section is 'veggie' or 'both':
-            IF meal['veggie'] does NOT equal veggie:
-                SKIP this meal
- 
-        # Filter 4: starch must match
-        IF meal['starch'] does NOT equal starch:
-            SKIP this meal
- 
-        # Meal passed all filters — add it!
-        ADD meal to results
- 
-    RETURN results
-"""
-    
+def ask_both():
+    print("Choose both meat and veggie:")
+    print("1) beef & Broc   2) chick and Corn")
+    while True:
+        choice = input("Enter choice (1-2): ").strip()
+        if choice == '1': return 'beef''broc'
+        if choice == '2': return 'chick''corn'
+        print("Invalid — please enter 1 or 2")
+ask_section()import json
+
 
