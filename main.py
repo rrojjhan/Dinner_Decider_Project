@@ -271,6 +271,7 @@ def ask_section():
             ask_both()
             return 'both'
         elif choice == '4':
+            ask_dairy
             return 'dairy'
         else:
             print('Invalid — please enter 1, 2, 3, or 4')
@@ -313,6 +314,7 @@ def ask_toppings():
         print("Invalid — please enter 1 or 2")
 
 
+
 def ask_both():
     print("Choose both meat and veggie:")
     print("1) beef & Broc   2) chick and Corn")
@@ -321,6 +323,26 @@ def ask_both():
         if choice == '1': return 'beef''broc'
         if choice == '2': return 'chick''corn'
         print("Invalid — please enter 1 or 2")
-ask_section()import json
 
 
+
+def ask_dairy():
+    print("do you wanna have breakfast dairy or dinner dairy?:")
+    print("1) breakfast dairy   2) dinner dairy")
+    while True:
+        choice = input("Enter choice (1-2): ").strip()
+        if choice == '1': ask_breakfast_dairy()  return 'breakfast'
+        if choice == '2': ()  return 'dinner'
+        print("Invalid — please enter 1 or 2")
+
+
+
+def ask_breakfast_dairy():
+    print("chose a breakfast dairy:")
+    print("1) milk   2) dinner dairy")
+    while True:
+        choice = input("Enter choice (1-2): ").strip()
+        if choice == '1': ()  ,return 'milk'
+        if choice == '2': ()  return 'cheese'
+        print("Invalid — please enter 1 or 2")
+ask_section()
