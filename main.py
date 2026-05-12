@@ -279,9 +279,10 @@ def ask_protein():
         choice = input("Enter choice (1-2): ").strip()
         if choice == '1': 
           return 'beef'
-        if choice == '2': 
+        elif choice == '2': 
           return 'fish'
         #if choice ==  None : return None
+        else:
         print("Invalid — please enter 1 or 2")
 
 def ask_veggie():
@@ -291,8 +292,9 @@ def ask_veggie():
         choice = input("Enter choice (1-2): ").strip()
         if choice == '1': 
           return 'broc'
-        if choice == '2': 
+        elif choice == '2': 
           return 'corn'
+        else:
         print("Invalid — please enter 1 or 2")
 
 def ask_starch():
@@ -302,8 +304,9 @@ def ask_starch():
         choice = input("Enter choice (1-2): ").strip()
         if choice == '1': 
           return 'grains'
-        if choice == '2': 
+        elif choice == '2': 
           return 'root veg'
+        else:
         print("Invalid — please enter 1 or 2")
 
 def ask_toppings():
@@ -313,8 +316,9 @@ def ask_toppings():
         choice = input("Enter choice (1-2): ").strip()
         if choice == '1': 
           return True
-        if choice == '2': 
+        elif choice == '2': 
           return False
+        else:
         print("Invalid — please enter 1 or 2")
 
 
@@ -326,8 +330,9 @@ def ask_both():
         choice = input("Enter choice (1-2): ").strip()
         if choice == '1': 
           return 'beef''broc'
-        if choice == '2': 
+        elif choice == '2': 
           return 'chick''corn'
+        else:
         print("Invalid — please enter 1 or 2")
 
 
@@ -339,8 +344,9 @@ def ask_dairy():
         choice = input("Enter choice (1-2): ").strip()
         if choice == '1':  
           return 'breakfast'
-        if choice == '2':  
+        elif choice == '2':  
           return 'dinner'
+        else:
         print("Invalid — please enter 1 or 2")
 
 
@@ -352,7 +358,8 @@ def ask_breakfast_dairy():
         choice = input("Enter choice (1-2): ").strip()
         if choice == '1': 
           return 'milk'
-        if choice == '2': 
+        elif choice == '2': 
           return 'cheese'
+        else:
         print("Invalid — please enter 1 or 2")
-ask_section()
+
