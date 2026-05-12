@@ -1,4 +1,5 @@
 import json
+import random
 
 meal_data = {
   "meals": [
@@ -9,11 +10,7 @@ meal_data = {
       "protein": "beef",
       "veggie": None,
       "starch": "root veg",
-      "toppings": [
-        "bacon bits",
-        "fried onion",
-        "sesame seeds"
-      ],
+      "toppings": ["bacon bits", "fried onion", "sesame seeds"],
       "description": "A hearty one-pot dish with tender beef and root vegetables over rice."
     },
     {
@@ -23,10 +20,7 @@ meal_data = {
       "protein": "beef",
       "veggie": None,
       "starch": "grains",
-      "toppings": [
-        "fried onion",
-        "olive oil"
-      ],
+      "toppings": ["fried onion", "olive oil"],
       "description": "Classic slow-cooked beef stew served over hearty grains."
     },
     {
@@ -36,10 +30,7 @@ meal_data = {
       "protein": "fish",
       "veggie": None,
       "starch": "root veg",
-      "toppings": [
-        "cheddar cheese",
-        "olive oil"
-      ],
+      "toppings": ["cheddar cheese", "olive oil"],
       "description": "Creamy chowder with fresh snapper and roasted root vegetables."
     },
     {
@@ -49,36 +40,27 @@ meal_data = {
       "protein": "fish",
       "veggie": None,
       "starch": "grains",
-      "toppings": [
-        "sesame seeds",
-        "olive oil"
-      ],
+      "toppings": ["sesame seeds", "olive oil"],
       "description": "Pan-seared salmon fillet served over a warm farro grain bowl."
     },
     {
       "id": 5,
-      "name": "Roasted Broc & Farro Bowl",
+      "name": "Roasted Broccoli & Farro Bowl",
       "section": "veggie",
       "protein": None,
-      "veggie": "broc",
+      "veggie": "broccoli",
       "starch": "grains",
-      "toppings": [
-        "cheddar cheese",
-        "sesame seeds"
-      ],
+      "toppings": ["cheddar cheese", "sesame seeds"],
       "description": "Oven-roasted broccoli florets served over nutty farro grains."
     },
     {
       "id": 6,
-      "name": "Roasted Broc & Root Veggie",
+      "name": "Roasted Broccoli & Root Veggie",
       "section": "veggie",
       "protein": None,
-      "veggie": "broc",
+      "veggie": "broccoli",
       "starch": "root veg",
-      "toppings": [
-        "olive oil",
-        "sesame seeds"
-      ],
+      "toppings": ["olive oil", "sesame seeds"],
       "description": "A wholesome roasted broccoli and root vegetable medley."
     },
     {
@@ -88,10 +70,7 @@ meal_data = {
       "protein": None,
       "veggie": "corn",
       "starch": "grains",
-      "toppings": [
-        "bacon bits",
-        "cheddar cheese"
-      ],
+      "toppings": ["bacon bits", "cheddar cheese"],
       "description": "Golden skillet cornbread with sweet corn baked right in."
     },
     {
@@ -101,23 +80,17 @@ meal_data = {
       "protein": None,
       "veggie": "corn",
       "starch": "root veg",
-      "toppings": [
-        "cheddar cheese",
-        "olive oil"
-      ],
+      "toppings": ["cheddar cheese", "olive oil"],
       "description": "Hearty corn chowder with roasted root vegetables."
     },
     {
       "id": 9,
-      "name": "Beef & Broc Grain Bowl",
+      "name": "Beef & Broccoli Grain Bowl",
       "section": "both",
       "protein": "beef",
-      "veggie": "broc",
+      "veggie": "broccoli",
       "starch": "grains",
-      "toppings": [
-        "bacon bits",
-        "sesame seeds"
-      ],
+      "toppings": ["bacon bits", "sesame seeds"],
       "description": "Savory beef and broccoli over farro grains."
     },
     {
@@ -125,38 +98,29 @@ meal_data = {
       "name": "Savory Beef & Root Veggie Stir Fry",
       "section": "both",
       "protein": "beef",
-      "veggie": "broc",
+      "veggie": "broccoli",
       "starch": "root veg",
-      "toppings": [
-        "fried onion",
-        "sesame seeds"
-      ],
+      "toppings": ["fried onion", "sesame seeds"],
       "description": "Sizzling stir fry with beef and broccoli over roasted root vegetables."
     },
     {
       "id": 11,
       "name": "Street Corn Chicken Rice Bowl",
       "section": "both",
-      "protein": "chick",
+      "protein": "chicken",
       "veggie": "corn",
       "starch": "grains",
-      "toppings": [
-        "cheddar cheese",
-        "olive oil"
-      ],
+      "toppings": ["cheddar cheese", "olive oil"],
       "description": "Grilled chicken and charred street corn served over seasoned rice."
     },
     {
       "id": 12,
       "name": "Sheet Pan Roasted Chicken",
       "section": "both",
-      "protein": "chick",
+      "protein": "chicken",
       "veggie": "corn",
       "starch": "root veg",
-      "toppings": [
-        "olive oil",
-        "sesame seeds"
-      ],
+      "toppings": ["olive oil", "sesame seeds"],
       "description": "Easy sheet pan chicken with roasted corn and root vegetables."
     },
     {
@@ -166,12 +130,7 @@ meal_data = {
       "protein": None,
       "veggie": None,
       "starch": "grains",
-      "dairy_type": "breakfast",
-      "dairy_sub": "milk",
-      "toppings": [
-        "bacon bits",
-        "fried onion"
-      ],
+      "toppings": ["bacon bits", "fried onion"],
       "description": "A classic breakfast cereal with cold milk — breakfast for dinner!"
     },
     {
@@ -181,12 +140,7 @@ meal_data = {
       "protein": None,
       "veggie": None,
       "starch": "grains",
-      "dairy_type": "breakfast",
-      "dairy_sub": "cheese",
-      "toppings": [
-        "bacon bits",
-        "fried onion"
-      ],
+      "toppings": ["bacon bits", "fried onion"],
       "description": "Golden toasted grilled cheese sandwich with gooey melted cheese."
     },
     {
@@ -196,12 +150,7 @@ meal_data = {
       "protein": None,
       "veggie": None,
       "starch": "grains",
-      "dairy_type": "dinner",
-      "dairy_sub": "milk",
-      "toppings": [
-        "cheddar cheese",
-        "olive oil"
-      ],
+      "toppings": ["cheddar cheese", "olive oil"],
       "description": "Layered pasta with rich meat sauce, bechamel, and melted cheese."
     },
     {
@@ -211,155 +160,86 @@ meal_data = {
       "protein": None,
       "veggie": None,
       "starch": "grains",
-      "dairy_type": "dinner",
-      "dairy_sub": "cheese",
-      "toppings": [
-        "cheddar cheese",
-        "bacon bits"
-      ],
+      "toppings": ["cheddar cheese", "bacon bits"],
       "description": "Oven-baked pasta loaded with creamy cheese sauce and golden crust."
     }
   ],
-  "toppings": [
-    "bacon bits",
-    "fried onion",
-    "cheddar cheese",
-    "olive oil",
-    "sesame seeds"
-  ]
+  "toppings": ["bacon bits", "fried onion", "cheddar cheese", "olive oil", "sesame seeds"]
 }
 
-
-#Write JSON file for creating a JSON file in Python
 with open('meals.json', 'w') as json_file:
-    json.dump(meal_data, json_file, indent = 4  )
+    json.dump(meal_data, json_file, indent=4)
 
-print(f"The meal data has been successfully save to meals.json!")
+print("The meal data has been successfully saved to meals.json!")
+
+# ── Load meals from the JSON file ──────────────────────────────
+def load_meals():
+    with open("meals.json", "r") as file:
+        data = json.load(file)
+    return data["meals"]
 
 
-# Make functions to handle the user's choices
-
-"""FUNCTION ask_section():
-    Display 'Choose a food section:'
-    Display '1) Meat   2) Veggie   3) Both   4) Dairy'
- 
-    WHILE True:
-        choice  ←  get input from user
-        IF choice is '1': RETURN 'meat'
-        IF choice is '2': RETURN 'veggie'
-        IF choice is '3': RETURN 'both'
-        IF choice is '4': RETURN 'dairy'
-        ELSE: display 'Invalid — please enter 1, 2, 3, or 4'
-"""
-choice_order = ()
-
+# ── Ask questions ───────────────────────────────────────────────
 def ask_section():
-    print('Choose a food section:')
-    print('1) Meat   2) Veggie   3) Both   4) Dairy')
+    print("\nChoose a food section:")
+    print("  1) Meat")
+    print("  2) Veggie")
+    print("  3) Both")
+    print("  4) Dairy")
+
     while True:
-        # Ask for the user's choices
-        choice = input("Enter choice (1 -4): ").strip()
-  
-        # Return each choice the user picks.
-        if choice == '1':
-            return 'meat'
-        elif choice == '2':
-            return 'veggie'
-        elif choice == '3':
-            return 'both'
-        elif choice == '4':
-            return 'dairy'
-        else:
-            print('Invalid — please enter 1, 2, 3, or 4')
+        choice = input("Enter 1, 2, 3, or 4: ")
+        if choice == "1": return "meat"
+        if choice == "2": return "veggie"
+        if choice == "3": return "both"
+        if choice == "4": return "dairy"
+        print("Invalid — try again.")
+
 
 def ask_protein():
-    print("Choose a protein:")
-    print("1) Beef  2) Fish ")
+    print("\nChoose your protein:")
+    print("  1) Beef")
+    print("  2) Fish")
+    print("  3) Chicken")
+
     while True:
-        choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': 
-          return 'beef'
-        elif choice == '2': 
-          return 'fish'
-        #if choice ==  None : return None
-        else:
-        print("Invalid — please enter 1 or 2")
+        choice = input("Enter 1, 2, or 3: ")
+        if choice == "1": return "beef"
+        if choice == "2": return "fish"
+        if choice == "3": return "chicken"
+        print("Invalid — try again.")
+
 
 def ask_veggie():
-    print("Choose a vegetable:")
-    print("1) Broc   2) Corn")
+    print("\nChoose your vegetable:")
+    print("  1) Broccoli")
+    print("  2) Corn")
+
     while True:
-        choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': 
-          return 'broc'
-        elif choice == '2': 
-          return 'corn'
-        else:
-        print("Invalid — please enter 1 or 2")
+        choice = input("Enter 1 or 2: ")
+        if choice == "1": return "broccoli"
+        if choice == "2": return "corn"
+        print("Invalid — try again.")
+
 
 def ask_starch():
-    print("Choose a starch:")
-    print("1) Grains   2) Root Veg")
+    print("\nChoose your starch:")
+    print("  1) Grains  (rice, farro, pasta)")
+    print("  2) Root Veg (potato, sweet potato)")
+
     while True:
-        choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': 
-          return 'grains'
-        elif choice == '2': 
-          return 'root veg'
-        else:
-        print("Invalid — please enter 1 or 2")
+        choice = input("Enter 1 or 2: ")
+        if choice == "1": return "grains"
+        if choice == "2": return "root veg"
+        print("Invalid — try again.")
+
 
 def ask_toppings():
-    print("Would you like extra toppings?")
-    print("1) Yes   2) No")
     while True:
-        choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': 
-          return True
-        elif choice == '2': 
-          return False
-        else:
-        print("Invalid — please enter 1 or 2")
+        choice = input("\nWould you like toppings? (yes / no): ").lower()
+        if choice in ("yes", "y"): return True
+        if choice in ("no",  "n"): return False
+        print("Please type yes or no.")
 
 
-
-def ask_both():
-    print("Choose both meat and veggie:")
-    print("1) beef & Broc   2) chick and Corn")
-    while True:
-        choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': 
-          return 'beef''broc'
-        elif choice == '2': 
-          return 'chick''corn'
-        else:
-        print("Invalid — please enter 1 or 2")
-
-
-
-def ask_dairy():
-    print("do you wanna have breakfast dairy or dinner dairy?:")
-    print("1) breakfast dairy   2) dinner dairy")
-    while True:
-        choice = input("Enter choice (1-2): ").strip()
-        if choice == '1':  
-          return 'breakfast'
-        elif choice == '2':  
-          return 'dinner'
-        else:
-        print("Invalid — please enter 1 or 2")
-
-
-
-def ask_breakfast_dairy():
-    print("chose a breakfast dairy:")
-    print("1) milk   2) dinner dairy")
-    while True:
-        choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': 
-          return 'milk'
-        elif choice == '2': 
-          return 'cheese'
-        else:
-        print("Invalid — please enter 1 or 2")
 
