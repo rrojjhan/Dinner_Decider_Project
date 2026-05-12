@@ -189,10 +189,15 @@ def ask_section():
 
     while True:
         choice = input("Enter 1, 2, 3, or 4: ")
-        if choice == "1": return "meat"
-        if choice == "2": return "veggie"
-        if choice == "3": return "both"
-        if choice == "4": return "dairy"
+        if choice == "1": 
+          return "meat"
+        elif choice == "2": 
+          return "veggie"
+        elif choice == "3": 
+          return "both"
+        elif choice == "4": 
+          return "dairy"
+        else:
         print("Invalid — try again.")
 
 
@@ -204,9 +209,13 @@ def ask_protein():
 
     while True:
         choice = input("Enter 1, 2, or 3: ")
-        if choice == "1": return "beef"
-        if choice == "2": return "fish"
-        if choice == "3": return "chicken"
+        if choice == "1": 
+          return "beef"
+        elif choice == "2": 
+          return "fish"
+        elif choice == "3": 
+          return "chicken"
+        else:
         print("Invalid — try again.")
 
 
@@ -217,8 +226,11 @@ def ask_veggie():
 
     while True:
         choice = input("Enter 1 or 2: ")
-        if choice == "1": return "broccoli"
-        if choice == "2": return "corn"
+        if choice == "1": 
+          return "broccoli"
+        elif choice == "2": 
+          return "corn"
+        else:
         print("Invalid — try again.")
 
 
@@ -229,27 +241,42 @@ def ask_starch():
 
     while True:
         choice = input("Enter 1 or 2: ")
-        if choice == "1": return "grains"
-        if choice == "2": return "root veg"
+        if choice == "1": 
+          return "grains"
+        elif choice == "2": 
+          return "root veg"
+        else:
         print("Invalid — try again.")
 
 
 def ask_toppings():
     while True:
         choice = input("\nWould you like toppings? (yes / no): ").lower()
-        if choice in ("yes", "y"): return True
-        if choice in ("no",  "n"): return False
+        if choice in ("yes", "y"): 
+          return True
+        elif choice in ("no",  "n"): 
+          return False
+        else:
         print("Please type yes or no.")
 
 
 # ── Filter meals based on the user's answers ────────────────────
 
+def filter_meals(all_meals, section, protein, veggie, starch):
+    results = []
 
+    for meal in all_meals:
+        if meal["section"] != section:
+            continue
+        if section in ("meat", "both") and meal.get("protein") != protein:
+            continue
+        if section in ("veggie", "both") and meal.get("veggie") != veggie:
+            continue
+        if meal["starch"] != starch:
+            continue
+        results.append(meal)
 
-
-
-
-
+    return results
 
 # ── Pick one meal from the filtered list ────────────────────────
 
