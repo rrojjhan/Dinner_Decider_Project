@@ -262,16 +262,12 @@ def ask_section():
   
         # Return each choice the user picks.
         if choice == '1':
-            ask_protein()
             return 'meat'
         elif choice == '2':
-            ask_veggie()
             return 'veggie'
         elif choice == '3':
-            ask_both()
             return 'both'
         elif choice == '4':
-            ask_dairy
             return 'dairy'
         else:
             print('Invalid — please enter 1, 2, 3, or 4')
@@ -281,8 +277,10 @@ def ask_protein():
     print("1) Beef  2) Fish ")
     while True:
         choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': return 'beef'
-        if choice == '2': return 'fish'
+        if choice == '1': 
+          return 'beef'
+        if choice == '2': 
+          return 'fish'
         #if choice ==  None : return None
         print("Invalid — please enter 1 or 2")
 
@@ -291,8 +289,10 @@ def ask_veggie():
     print("1) Broc   2) Corn")
     while True:
         choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': return 'broc'
-        if choice == '2': return 'corn'
+        if choice == '1': 
+          return 'broc'
+        if choice == '2': 
+          return 'corn'
         print("Invalid — please enter 1 or 2")
 
 def ask_starch():
@@ -300,8 +300,10 @@ def ask_starch():
     print("1) Grains   2) Root Veg")
     while True:
         choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': return 'grains'
-        if choice == '2': return 'root veg'
+        if choice == '1': 
+          return 'grains'
+        if choice == '2': 
+          return 'root veg'
         print("Invalid — please enter 1 or 2")
 
 def ask_toppings():
@@ -309,8 +311,10 @@ def ask_toppings():
     print("1) Yes   2) No")
     while True:
         choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': return True
-        if choice == '2': return False
+        if choice == '1': 
+          return True
+        if choice == '2': 
+          return False
         print("Invalid — please enter 1 or 2")
 
 
@@ -320,8 +324,10 @@ def ask_both():
     print("1) beef & Broc   2) chick and Corn")
     while True:
         choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': return 'beef''broc'
-        if choice == '2': return 'chick''corn'
+        if choice == '1': 
+          return 'beef''broc'
+        if choice == '2': 
+          return 'chick''corn'
         print("Invalid — please enter 1 or 2")
 
 
@@ -331,8 +337,10 @@ def ask_dairy():
     print("1) breakfast dairy   2) dinner dairy")
     while True:
         choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': ask_breakfast_dairy()  return 'breakfast'
-        if choice == '2': ()  return 'dinner'
+        if choice == '1':  
+          return 'breakfast'
+        if choice == '2':  
+          return 'dinner'
         print("Invalid — please enter 1 or 2")
 
 
@@ -342,7 +350,9 @@ def ask_breakfast_dairy():
     print("1) milk   2) dinner dairy")
     while True:
         choice = input("Enter choice (1-2): ").strip()
-        if choice == '1': ()  ,return 'milk'
-        if choice == '2': ()  return 'cheese'
+        if choice == '1': 
+          return 'milk'
+        if choice == '2': 
+          return 'cheese'
         print("Invalid — please enter 1 or 2")
 ask_section()
