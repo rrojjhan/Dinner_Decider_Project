@@ -242,4 +242,28 @@ def ask_toppings():
         print("Please type yes or no.")
 
 
+# ── Filter meals based on the user's answers ────────────────────
 
+
+
+
+
+
+
+
+# ── Pick one meal from the filtered list ────────────────────────
+
+
+
+
+
+
+
+# ── Show the final result ───────────────────────────────────────
+
+
+
+
+
+
+# ── Main — puts everything together ────────────────────────────
