@@ -198,7 +198,7 @@ def ask_section():
         elif choice == "4": 
           return "dairy"
         else:
-        print("Invalid — try again.")
+          print("Invalid — try again.")
 
 
 def ask_protein():
@@ -216,7 +216,7 @@ def ask_protein():
         elif choice == "3": 
           return "chicken"
         else:
-        print("Invalid — try again.")
+          print("Invalid — try again.")
 
 
 def ask_veggie():
@@ -231,7 +231,7 @@ def ask_veggie():
         elif choice == "2": 
           return "corn"
         else:
-        print("Invalid — try again.")
+          print("Invalid — try again.")
 
 
 def ask_starch():
@@ -246,7 +246,7 @@ def ask_starch():
         elif choice == "2": 
           return "root veg"
         else:
-        print("Invalid — try again.")
+          print("Invalid — try again.")
 
 
 def ask_toppings():
@@ -257,7 +257,7 @@ def ask_toppings():
         elif choice in ("no",  "n"): 
           return False
         else:
-        print("Please type yes or no.")
+          print("Please type yes or no.")
 
 
 # ── Filter meals based on the user's answers ────────────────────
@@ -280,8 +280,9 @@ def filter_meals(all_meals, section, protein, veggie, starch):
 
 # ── Pick one meal from the filtered list ────────────────────────
 
-
-
+if len(meal_data) == 0:
+   print("No exact match found! Here is a random suggestion:")
+   print(random.choice(meal_data))
 
 
 
