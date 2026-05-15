@@ -130,7 +130,7 @@ meal_data = {
       "protein": None,
       "veggie": None,
       "starch": "grains",
-      "toppings": ["M&M", "raisin"],
+      "toppings": ["nuts", "raisins"],
       "description": "A classic breakfast cereal with cold milk — breakfast for dinner!"
     },
     {
@@ -164,7 +164,7 @@ meal_data = {
       "description": "Oven-baked pasta loaded with creamy cheese sauce and golden crust."
     }
   ],
-  "toppings": ["bacon bits", "fried onion", "cheddar cheese", "olive oil", "sesame seeds"]
+  "toppings": ["bacon bits", "fried onion", "cheddar cheese", "olive oil", "sesame seeds", "nuts", "raisins"]
 }
 
 with open('meals.json', 'w') as json_file:
