@@ -130,7 +130,7 @@ meal_data = {
       "protein": None,
       "veggie": None,
       "starch": "grains",
-      "toppings": ["bacon bits", "fried onion"],
+      "toppings": ["M&M", "raisin"],
       "description": "A classic breakfast cereal with cold milk — breakfast for dinner!"
     },
     {
