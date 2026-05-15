@@ -130,7 +130,7 @@ meal_data = {
       "protein": None,
       "veggie": None,
       "starch": "grains",
-      "toppings": ["nuts", "raisins"],
+      "toppings": ["bacon bits", "fried onion"],
       "description": "A classic breakfast cereal with cold milk — breakfast for dinner!"
     },
     {
@@ -164,7 +164,7 @@ meal_data = {
       "description": "Oven-baked pasta loaded with creamy cheese sauce and golden crust."
     }
   ],
-  "toppings": ["bacon bits", "fried onion", "cheddar cheese", "olive oil", "sesame seeds", "nuts", "raisins"]
+  "toppings": ["bacon bits", "fried onion", "cheddar cheese", "olive oil", "sesame seeds"]
 }
 
 with open('meals.json', 'w') as json_file:
@@ -279,16 +279,23 @@ def filter_meals(all_meals, section, protein, veggie, starch):
     return results
 
 # ── Pick one meal from the filtered list ────────────────────────
-
-if len(meal_data) == 0:
-   print("No exact match found! Here is a random suggestion:")
-   print(random.choice(meal_data))
-
+def select_meal(filter_meals,meal_data):
+  if len(filter_meals) == 0:
+      print("No exact match found! Here is a random suggestion:")
+      return random.choice(meal_data)
+  elif len(filter_meals) == 0:
+      return filter_meals[0]
+  else:
+      print("great news - we have several options!")
+      return random.choice(filter_meals)
 
 
 
 # ── Show the final result ───────────────────────────────────────
-
+def display_result(select_meal, selected_toppings):
+    print('___________________________________________')
+    print("'tonights dinner:' + chosen_meal['name']")
+    print("'description:'")
 
 
 
