@@ -41,11 +41,6 @@ This project is great for beginners because it uses many important Python topics
 | JSON                   | Saves and loads meal data             |
 | `random.choice()`      | Picks a random meal                   |
 
----
-# Flowchart
-<img width="4026" height="1671" alt="Dinner_Decider drawio" src="https://github.com/user-attachments/assets/5bfd31d2-7483-4c9a-a079-26a134eb50ee" />
-
----
 
 ## 📂 Project Structure
 
