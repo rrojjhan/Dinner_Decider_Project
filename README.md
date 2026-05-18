@@ -140,4 +140,4 @@ Special thanks to **Miss Rachnicha** for mentoring and guiding me throughout thi
 
 The Dinner Decider is a simple but practical project that demonstrates how programming can solve everyday problems. Instead of spending time wondering what to eat, users can let Python make the decision for them.
 
-**When in doubt, let Python choose dinner! 🐍🍕**
+
